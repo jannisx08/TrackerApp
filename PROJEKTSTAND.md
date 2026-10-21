@@ -6,7 +6,7 @@ Eine eigene Tagebuch-App für Fußball, Fitness und Ernährung (Stil ähnlich Pe
 ## Technik
 - Eine einzige Datei `index.html` (HTML, CSS, JavaScript ohne Frameworks)
 - Daten im `localStorage` (Schlüssel `fortschrittstagebuch_v1` plus Suffixe `_w`, `_m`, `_f`, `_x`, `_wo`, `_s`, `_c`, `_a`, `_set`)
-- Weitere Dateien: `manifest.webmanifest`, `sw.js` (Service Worker, network-first), `icon-192.png`, `icon-512.png`, `README.md`
+- Weitere Dateien: `manifest.webmanifest`, `sw.js` (Service Worker, network-first), `icon-180.png`, `icon-192.png`, `icon-512.png`, `README.md`
 - Hosting: GitHub Pages (öffentliches Repository `fortschrittstagebuch`)
 - Updates: neue `index.html` im Repo hochladen und committen
 - Keine KI-Funktion eingebaut (Auswertung ist regelbasiert)
@@ -16,6 +16,7 @@ Eine eigene Tagebuch-App für Fußball, Fitness und Ernährung (Stil ähnlich Pe
 - Farben als CSS-Variablen in `:root` (`--bg --card --tx --mu --ac --acx --onac --ac2 --bd --in --g --navbg --b1..b3 --dn`), Hell/Dunkel über `prefers-color-scheme`
 - Untere Leiste: schwebende Glas-Pille mit 6 Symbolen (Eintrag, Essen, Wiegen, Gym, Verlauf, Stats), nur der aktive Tab zeigt Text; Settings über den runden Button oben rechts in der Kopfzeile
 - Gym-Training: Satzpause als Fortschrittsring (füllt sich über 120 Sek., dann von vorn) mit Workout-Name, Gesamtzeit und rundem Pause-Button
+- App-Icon: Glas-Karte mit Checkliste und Hantel auf violett-türkisem Aurora-Hintergrund (180/192/512 px); iOS übernimmt das Icon nur beim Hinzufügen zum Home-Bildschirm
 - Systemschrift statt Webfonts (Regel: alles offline in einer Datei); Icons als inline SVG; keine Emojis in der Leiste
 - Frühere Varianten: Navy-Design (Sicherung `vorschau/vorschau_navy.html`, nur im Chat-Arbeitsbereich), Design-Optionen A bis J in der Design-Ansicht im Chat
 
