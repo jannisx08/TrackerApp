@@ -33,7 +33,8 @@ input,select,textarea{width:100%;padding:12px;border:1px solid var(--bd);border-
 .row>*{min-width:0}
 .row:has(input[type=datetime-local]){grid-template-columns:minmax(0,1fr)}
 input[type=checkbox]{accent-color:var(--ac)}
-input[type=datetime-local],input[type=date]{min-width:0;max-width:100%}
+input[type=datetime-local],input[type=date]{-webkit-appearance:none;appearance:none;display:block;width:100%;min-width:0;max-width:100%;min-height:46px;margin:0;text-align:left;line-height:1.2}
+input[type=date]::-webkit-date-and-time-value,input[type=datetime-local]::-webkit-date-and-time-value{text-align:left;min-height:1.2em}
 button{font:inherit;border:0;border-radius:18px;padding:12px 14px;background:var(--g);color:var(--onac);font-weight:600;cursor:pointer}
 button.sec{background:var(--ac2);color:var(--acx)}
 button.del{background:transparent;color:var(--dn);padding:4px 8px}
