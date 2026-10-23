@@ -1,6 +1,6 @@
 {
-  "name": "Fortschrittstagebuch",
-  "short_name": "Tagebuch",
+  "name": "Tracker4Life",
+  "short_name": "Tracker4Life",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

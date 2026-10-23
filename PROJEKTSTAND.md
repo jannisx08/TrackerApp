@@ -1,13 +1,14 @@
-# Projektstand: Fortschrittstagebuch
+# Projektstand: Tracker4Life
 
 ## Ziel
-Eine eigene Tagebuch-App für Fußball, Fitness und Ernährung (Stil ähnlich PerformAll, aber besser). Läuft als PWA auf dem iPhone, später evtl. als native iOS-App (Capacitor). Nutzer ist Anfänger, Sprache Deutsch, Anrede "Du".
+Der Name der App ist **Tracker4Life** (früher "Fortschrittstagebuch"). Eine eigene Tagebuch-App für Fußball, Fitness und Ernährung (Stil ähnlich PerformAll, aber besser). Läuft als PWA auf dem iPhone, später evtl. als native iOS-App (Capacitor). Nutzer ist Anfänger, Sprache Deutsch, Anrede "Du".
 
 ## Technik
 - Eine einzige Datei `index.html` (HTML, CSS, JavaScript ohne Frameworks)
 - Daten im `localStorage` (Schlüssel `fortschrittstagebuch_v1` plus Suffixe `_w`, `_m`, `_f`, `_x`, `_wo`, `_s`, `_c`, `_a`, `_set`)
 - Weitere Dateien: `manifest.webmanifest`, `sw.js` (Service Worker, network-first), `icon-180.png`, `icon-192.png`, `icon-512.png`, `README.md`
-- Hosting: GitHub Pages (öffentliches Repository `fortschrittstagebuch`)
+- Hosting: GitHub Pages (öffentliches Repository `fortschrittstagebuch`, Name im Repo bleibt wie er ist, damit die Adresse gleich bleibt)
+- Die localStorage-Schlüssel behalten das alte Präfix `fortschrittstagebuch_v1`, damit bestehende Daten erhalten bleiben (nie umbenennen ohne Migration)
 - Updates: neue `index.html` im Repo hochladen und committen
 - Keine KI-Funktion eingebaut (Auswertung ist regelbasiert)
 
@@ -57,6 +58,7 @@ Alle geplanten Patches (1.1, 1.2, B, C) sind umgesetzt und freigegeben. Neue Wü
 4. Optional: KI-Auswertung über die Claude API (braucht kleines Backend, API-Key nie im Frontend)
 
 ## Regeln für Claude
+- App-Name immer **Tracker4Life** verwenden
 - Antworten auf Deutsch, kurz und mobilfreundlich
 - Größere Wünsche in kleine Patches aufteilen, zuerst Vorschau im Chat, erst nach "Freigeben" die fertige index.html und den aktualisierten Projektstand liefern
 - Änderungen immer an der aktuellen `index.html` machen und die komplette Datei zum Hochladen bereitstellen

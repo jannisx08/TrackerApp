@@ -1,4 +1,4 @@
-# ⚽ Fortschrittstagebuch
+# Tracker4Life
 
 Eine einfache Web-App (PWA) für Fußball, Fitness und Ernährung. Läuft im Browser, lässt sich als App auf den Home-Bildschirm legen und funktioniert offline. Alle Daten bleiben lokal auf dem Gerät.
 
